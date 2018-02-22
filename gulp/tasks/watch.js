@@ -19,6 +19,10 @@ var gulp = require( 'gulp' ),
             gulp.start('cssInject');
         });
 
+		watch('./app/assets/scripts/**/*.js', function() {
+			gulp.start('scriptsRefresh');
+		})
+
     });
 
     // watch css file changes
@@ -26,3 +30,7 @@ var gulp = require( 'gulp' ),
         return gulp.src('./app/compile/styles/styles.css')
         .pipe(browserSync.stream());
     });
+
+	gulp.task('scriptsRefresh', ['scripts'], function() {
+		browserSync.reload();
+	})
