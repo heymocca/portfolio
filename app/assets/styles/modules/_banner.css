@@ -1,0 +1,6 @@
+.banner {
+    grid-column: 1/13;
+    grid-row: auto;
+    background: url(/assets/images/banner.png);
+    height: auto;
+}

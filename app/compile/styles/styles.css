@@ -341,17 +341,14 @@ template {
   display: none;
 }
 
-* {
+body {
+    background: #181c22;
     color: #fff;
     text-align: center;
     font-family: sans-serif;
 }
 
 header {
-    grid-column: 1/13;
-}
-
-.banner {
     grid-column: 1/13;
 }
 
@@ -378,14 +375,21 @@ footer {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(50px, auto);
+    grid-row: auto;
+    /* grid-auto-rows: minmax(50px, auto); */
     grid-gap: 10px;
     margin: 0 auto;
     /* padding: 20px; */
-    width: 100%;
+    max-width: 100%;
 }
 
 .wrapper * {
-        background: #3498db;
         padding: 20px;
     }
+
+.banner {
+    grid-column: 1/13;
+    grid-row: auto;
+    background: url(/assets/images/banner.png);
+    height: auto;
+}
