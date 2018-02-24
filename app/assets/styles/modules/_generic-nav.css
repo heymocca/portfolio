@@ -1,0 +1,20 @@
+.generic-nav {
+    padding-top: 30px;
+    padding-right: 0px;
+
+    &--right {
+        float: right;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+}
