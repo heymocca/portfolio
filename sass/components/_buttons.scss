@@ -53,7 +53,7 @@
     }
 
     &--animated {
-        animation: moveToUp .8s ease-out .75s;
+        animation: moveToUp .8s ease-out 2.3s;
         animation-fill-mode: backwards;
     }
 
